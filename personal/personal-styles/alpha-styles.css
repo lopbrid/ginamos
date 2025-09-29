@@ -1,0 +1,102 @@
+.grid{
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+.prof{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgb(22, 22, 22);
+}
+
+.card{
+    transition: transform 0.18s,
+        box-shadow 0.18s,
+        filter 0.18s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.grid:hover .card{
+    filter: brightness(50%);
+    transform: scale(0.98);
+}
+.grid .card:hover{
+    filter: brightness(100%);
+    transform: scale(1.02);
+}
+
+.name{
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    margin-top: 0;
+    margin-left: 10px;
+    text-shadow: 1px 1px 10px rgb(22, 22, 22);
+    
+}
+.album1-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.15s;
+}
+
+.album1-grid:hover{
+    transform: scale(1.02);
+}
+.album1-img{
+    width: 50px;
+    border-radius: 3px;
+
+}
+.album1-content{
+    color: white;
+    vertical-align: top;
+    margin-top: 0;
+    margin-left: 10px;
+
+}
+.al1-name{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: bold; 
+    font-size: 18px;    
+}
+.al1-year{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.scroll-box{
+    width: auto;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.scroll-box::-webkit-scrollbar{
+    display: none;
+}
+
+.mask {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  overflow-y: auto;
+  border: 2px solid #444;
+  border-radius: 8px;
+}
+
+
+
